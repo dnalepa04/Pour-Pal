@@ -7,9 +7,9 @@ const char* ssid = "UVM";
 
 // ===== UVM Login Info =====
 // Replace ONLY your password.
-#define EAP_IDENTITY "dnalepa@uvm.edu"   
-#define EAP_USERNAME "dnalepa"           
-#define EAP_PASSWORD "$Ru$ty2004123"
+#define EAP_IDENTITY "MY_IDENTITY"   
+#define EAP_USERNAME "USERNAME"           
+#define EAP_PASSWORD "ENTER YOUR PASSWORD"
 
 void setup() {
   Serial.begin(115200);
