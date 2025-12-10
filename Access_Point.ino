@@ -12,13 +12,13 @@
 // Generate Web Server
 WebServer server(80);
 
-// LCD Adrres and Screen Size
+// LCD Address and Screen Size
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 
 // Define Motor Driver IN pins (Each pump uses 2 input pins)
 const int inPins[12] = {3,4,5,6,7,8,9,10,A0,A1,A2,A3};
 
-// Flow Rate Calibration Facros mL/sec 
+// Flow Rate Calibration Factors mL/sec 
 const float pumpFlowRate[6] = {3.3, 3.3, 3.3, 3.3, 1.6, 1.6};
 
 // Define Pump State
@@ -38,13 +38,13 @@ struct Cocktail {
 Cocktail storedCocktails[MAX_COCKTAILS];
 int cocktailCount = 0;
 
-//Define Variable to Tack Uptime
+//Define Variable to Track Uptime
 unsigned long startTime;
 
 // Creates Object for Flash Memory
 Preferences prefs;
 
-// Calculates Uptime and Returns Sting to Display to Webpage
+// Calculates Uptime and Returns String to Display to Webpage
 String getUptime() {
   unsigned long ms = millis() - startTime;
   unsigned long s = ms / 1000;
@@ -421,7 +421,7 @@ void handleDeleteCocktail(){
   server.send(404,"text/plain","Not found");
 }
 
-// Run All Pumps in Reverse fo 5 Seconds to Clean Tubes
+// Run All Pumps in Reverse for 5 Seconds to Clean Tubes
 void handleCleanse(){
   unsigned long duration=5000;
   unsigned long endTime=millis()+duration;
