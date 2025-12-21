@@ -1,4 +1,4 @@
-Hello! This is a repository for a project my friends (Adam Slamani & Carter Hill) and I worked on in our Microcontrollers class. I suggest looking at the presentation PDF to get a better understanding of the project overview! 
+Hello! This is a repository for a project my friends (Adam Slamani & Carter Hill) and I worked on in our Microcontrollers class. I suggest looking at the presentation PDF to get a better understanding of the project overview! If you would like a more in depth overview please look at the report written for this project.
 
 Access_Point
 This is the final release of the code that is fully commeneted and ready for use with the drink dispenser
